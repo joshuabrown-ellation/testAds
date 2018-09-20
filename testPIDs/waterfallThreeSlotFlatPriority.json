@@ -1,0 +1,274 @@
+{
+  "setup": {
+    "width": 640,
+    "height": 480,
+    "minWidth": 300,
+    "minHeight": 34,
+    "retry": 0,
+    "theme": "dark",
+    "volume": 78,
+    "controls": {
+      "progress": false,
+      "play": false,
+      "volume": false,
+      "mute": false
+    },
+    "maps": [
+      {
+        "name": "breakposition",
+        "callback": "function(e){\r\ntry{\r\nreturn EVS.adService.currentBreakType;\r\n} catch (ee) {\r\nconsole.warn('EVS currentBreakType undefined', ee);\r\n}\r\nreturn 'preroll';\r\n}"
+      },
+      {
+        "name": "media_id",
+        "callback": "function(e){\r\ntry{\r\nreturn 'VRV-' + EVS.config.media.metadata.id;\r\n} catch (ee) {\r\nconsole.warn('EVS media.id undefined', ee);\r\n}\r\nreturn \"VRV-0\";\r\n}"
+      },
+      {
+        "name": "rand",
+        "callback": "function(e){\r\nreturn (new Date()).getTime();\r\n}"
+      },
+      {
+        "name": "slidM",
+        "callback": "function(e){\r\n  var res = 'midroll-1';\r\n  if (e && e.instance && e.instance.adSlotPosition) {\r\n    res = 'midroll-' + (e.instance.adSlotPosition + 1)\r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "gimaslotname",
+        "callback": "function(e){\r\n  var res = '0';\r\n  if (window){\r\n    if (window.androidController){\r\n      res = '5444683146';\r\n    }\r\n    else if (window.iosController){\r\n      res = '3967975266';\r\n    } \r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "csidcheck1",
+        "callback": "function(e){\r\n  var res = 'vrv_web_homepage_1';\r\n  if (window) {\r\n    if (window.androidController) {\r\n      res = 'vrv_android_1';\r\n    } else if (window.iosController) {\r\n      res = 'vrv_iphone_1';\r\n    }\r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "csidcheck2",
+        "callback": "function(e){\r\n  var res = 'vrv_web_homepage_2';\r\n  if (window) {\r\n    if (window.androidController) {\r\n      res = 'vrv_android_2';\r\n    } else if (window.iosController) {\r\n      res = 'vrv_iphone_2';\r\n    }\r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "csidcheck3",
+        "callback": "function(e){\r\n  var res = 'vrv_web_homepage_3';\r\n  if (window) {\r\n    if (window.androidController) {\r\n      res = 'vrv_android_3';\r\n    } else if (window.iosController) {\r\n      res = 'vrv_iphone_3';\r\n    }\r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "csidcheck4",
+        "callback": "function(e){\r\n  var res = 'vrv_web_homepage_4';\r\n  if (window) {\r\n    if (window.androidController) {\r\n      res = 'vrv_android_4';\r\n    } else if (window.iosController) {\r\n      res = 'vrv_iphone_4';\r\n    }\r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "offsetS",
+        "callback": "function(e){\r\n  var res = '0';\r\n  if (EVS && EVS.adService && EVS.adService.currentBreak) {\r\n    res = EVS.adService.currentBreak;\r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "fbappid",
+        "callback": "function(e){\r\n  var res = '0';\r\n  if (window) {\r\n    if (window.androidController) {\r\n      res = '1784128868539576_1784128875206242';\r\n    } else if (window.iosController) {\r\n      res = '1784128868539576_1784128878539575';\r\n    }\r\n  }\r\n  return res;\r\n}"
+      },
+      {
+        "name": "pageUrl",
+        "callback": "function(e){\r\n  var res = '';\r\n try{\r\n if (EVS && EVS.config && EVS.config.app && EVS.config.app.page_url && EVS.config.app.page_url !== '') {\r\n    res = EVS.config.app.page_url;\r\n  } else if (window && window.top && window.top.location && window.top.location.href) {\r\n    res = window.top.location.href;\r\n  }\r\n} catch (ee) {\r\n}\r\n return res;\r\n}"
+      }
+    ],
+    "triggers": [
+
+      {
+        "PLID": 1,
+        "method": "event",
+        "action": "stop",
+        "setup": {
+          "adBreakType": "",
+          "adSlots": "",
+          "constraints": {
+            "startTime": "",
+            "adBreakTime": "",
+            "playTime": false
+          }
+        },
+        "condition": "",
+        "maxRuns": 0,
+        "time": 0,
+        "event": {
+          "name": "vendri_stop",
+          "target": "window"
+        }
+      },
+      {
+        "PLID": 1,
+        "method": "event",
+        "action": "mute",
+        "setup": {
+          "adBreakType": "",
+          "adSlots": "",
+          "constraints": {
+            "startTime": "",
+            "adBreakTime": "",
+            "playTime": false
+          }
+        },
+        "condition": "",
+        "maxRuns": 0,
+        "time": 0,
+        "event": {
+          "name": "vendri_mute",
+          "target": "window"
+        }
+      },
+      {
+        "PLID": 1,
+        "method": "event",
+        "action": "setVolume",
+        "setup": {
+          "adBreakType": "",
+          "adSlots": "",
+          "constraints": {
+            "startTime": "",
+            "adBreakTime": "",
+            "playTime": false
+          }
+        },
+        "condition": "function(e) {\r\n  if (EVS && EVS.player && !EVS.player.muted) {\r\n    return EVS.player.volume;\r\n  } else {\r\n    return 0;\r\n  }\r\n}",
+        "maxRuns": 0,
+        "time": 0,
+        "event": {
+          "name": "vendri_volume",
+          "target": "window"
+        }
+      },
+      {
+        "PLID": 1,
+        "method": "event",
+        "action": "resume",
+        "setup": {
+          "adBreakType": "",
+          "adSlots": "",
+          "constraints": {
+            "startTime": "",
+            "adBreakTime": "",
+            "playTime": false
+          }
+        },
+        "condition": "",
+        "maxRuns": 0,
+        "time": 0,
+        "event": {
+          "name": "vendri_resume",
+          "target": "window"
+        }
+      },
+      {
+        "PLID": 1,
+        "method": "event",
+        "action": "pause",
+        "setup": {
+          "adBreakType": "",
+          "adSlots": "",
+          "constraints": {
+            "startTime": "",
+            "adBreakTime": "",
+            "playTime": false
+          }
+        },
+        "condition": "",
+        "maxRuns": 0,
+        "time": 0,
+        "event": {
+          "name": "vendri_pause",
+          "target": "window"
+        }
+      },
+      {
+        "PLID": 1,
+        "method": "event",
+        "action": "adBreak",
+        "setup": {
+          "adBreakType": "",
+          "adSlots": "",
+          "constraints": {
+            "startTime": "",
+            "adBreakTime": "",
+            "playTime": false
+          }
+        },
+        "condition": "",
+        "maxRuns": 0,
+        "time": 0,
+        "event": {
+          "name": "vendri_stop_adBreak",
+          "target": "window"
+        }
+      }
+    ],
+    "platforms": [
+      {
+        "id": 1,
+        "name": "viloscx_demo",
+        "target": "*",
+        "type": "web"
+      }
+    ],
+    "adSlots": 3,
+    "placements": [
+      {
+        "PFID": 1,
+        "id": "placement_midroll",
+        "name": "placement_midroll",
+        "target": "android_div",
+        "type": "element",
+        "watchMe": true,
+        "prefetch": true
+      }
+    ],
+    "campaigns": [
+      {
+        "PLID": 1,
+        "id": "campaign",
+        "name": "Campaign",
+        "start": "2017-06-01T14:56",
+        "end": "",
+        "imps": 0
+      }
+    ],
+    "creatives": [
+      {
+        "CPID": 1,
+        "id": "headerBid",
+        "name": "header_Bid",
+        "resource": "//localhost:8081/headerBid?amzn_vid={a9_amzniid}&amznslots={a9_amznbid}",
+        "type": "a9-bid",
+        "p": 0,
+        "ecpm": 0,
+        "imps": 0
+      },
+      {
+        "CPID": 1,
+        "id": "vpaid",
+        "name": "Vpaid",
+        "resource": "//localhost:8081/vpaid",
+        "type": "vast",
+        "p": 0,
+        "ecpm": 0,
+        "imps": 0
+      },
+      {
+        "CPID": 1,
+        "id": "vast",
+        "name": "Vast",
+        "resource": "//localhost:8081/vast",
+        "type": "vast",
+        "p": 0,
+        "ecpm": 0,
+        "imps": 0
+      }
+    ],
+    "constraints": {
+      "startTime": 60,
+      "adBreakTime": 90,
+      "playTime": false
+    },
+    "adSkip": {
+      "enabled": true,
+      "duration": 2,
+      "textBefore": "You may skip in {duration} seconds",
+      "textAfter": "Skip now",
+      "sync": false
+    },
+    "audioClickthrough": false,
+    "debug": false,
+    "useDataTracking": false
+  },
+  "ts": 3000000000000
+}

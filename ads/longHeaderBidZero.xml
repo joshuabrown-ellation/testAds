@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VAST version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd">
+    <Ad id="longHeaderBidZero">
+        <InLine>
+            <AdSystem version="0.0.1">Vilos</AdSystem>
+            <AdTitle>Long Header Bid Zero</AdTitle>
+            <Description>Long Header Bid Video with trackers and a click through</Description>
+            <Impression id='longHeaderBidZero'><![CDATA[assets/tracker?type=impression]]></Impression>
+            <Creatives>
+                <Creative sequence="1" AdID="longHeaderBidZero">
+                    <Linear>
+                        <Duration>00:00:30</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start"><![CDATA[assets/tracker?type=start_linear]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[assets/tracker?type=midpoint_linear]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[assets/tracker?type=firstQuartile_linear]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[assets/tracker?type=thirdQuartile_linear]]></Tracking>
+                            <Tracking event="complete"><![CDATA[assets/tracker?type=complete_linear]]></Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickThrough><![CDATA[assets/testClickThrough.html?type=clickthrough_linear]]></ClickThrough>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile id="longHeaderBidZero" delivery="progressive" type="video/mp4" bitrate="551" width="560" height="320">
+                                <![CDATA[assets/long_header_zero.mp4]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>

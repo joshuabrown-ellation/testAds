@@ -1,0 +1,79 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
+    <Ad id="vpaidZero">
+        <InLine>
+            <AdSystem>Vilos</AdSystem>
+            <AdTitle>Vpaid Zero</AdTitle>
+            <Description>Vpaid</Description>
+            <Error>
+                <![CDATA[assets/tracker?event=error]]>
+            </Error>
+            <Impression>
+                <![CDATA[assets/tracker?event=impression]]>
+            </Impression>
+            <Creatives>
+                <Creative sequence="1">
+                    <Linear>
+                        <Duration>00:00:10</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[assets/tracker?event=start]]>
+                            </Tracking>
+                            <Tracking event="firstQuartile">
+                                <![CDATA[assets/tracker?event=firstQuartile]]>
+                            </Tracking>
+                            <Tracking event="midpoint">
+                                <![CDATA[assets/tracker?event=midpoint]]>
+                            </Tracking>
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[assets/tracker?event=thirdQuartile]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[assets/tracker?event=complete]]>
+                            </Tracking>
+                            <Tracking event="mute">
+                                <![CDATA[assets/tracker?event=mute]]>
+                            </Tracking>
+                            <Tracking event="unmute">
+                                <![CDATA[assets/tracker?event=unmute]]>
+                            </Tracking>
+                            <Tracking event="rewind">
+                                <![CDATA[assets/tracker?event=rewind]]>
+                            </Tracking>
+                            <Tracking event="pause">
+                                <![CDATA[assets/tracker?event=pause]]>
+                            </Tracking>
+                            <Tracking event="resume">
+                                <![CDATA[assets/tracker?event=resume]]>
+                            </Tracking>
+                            <Tracking event="fullscreen">
+                                <![CDATA[assets/tracker?event=fullscreen]]>
+                            </Tracking>
+                            <Tracking event="creativeView">
+                                <![CDATA[assets/tracker?event=creativeView]]>
+                            </Tracking>
+                            <Tracking event="acceptInvitation">
+                                <![CDATA[assets/tracker?event=acceptInvitation]]>
+                            </Tracking>
+                        </TrackingEvents>
+                        <AdParameters>
+                            <![CDATA[{"videos":[{"url":"assets/vpaid_zero.mp4","mimetype":"video/mp4"}],"overlay":"https://image.freepik.com/free-icon/play-button_318-42541.jpg"}]]>
+                        </AdParameters>
+                        <VideoClicks>
+                            <ClickThrough id="vpaidZero">
+                                <![CDATA[assets/testClickThrough.html]]>
+                            </ClickThrough>
+                            <ClickTracking id="vpaidZero">
+                                <![CDATA[assets/tracker?event=click]]>
+                            </ClickTracking>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile id="simpleVpaid" apiFramework="VPAID" type="application/javascript">
+                                <![CDATA[assets/simpleVpaid.js]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>

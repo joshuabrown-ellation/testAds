@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+    <Ad id="vastWrapperTwo">
+        <Wrapper>
+            <AdSystem>Vilos</AdSystem>
+            <VASTAdTagURI><![CDATA[assets/vastTwo.xml]]></VASTAdTagURI>
+            <Error><![CDATA[]]></Error>
+            <Impression><![CDATA[assets/tracker?wrapper=true&event=impression]]></Impression>
+            <Creatives>
+                <Creative AdID="vastWrapperTwo">
+                    <Linear>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[assets/tracker?wrapper=true&event=start]]>
+                            </Tracking>
+                            <Tracking event="firstQuartile">
+                                <![CDATA[assets/tracker?wrapper=true&event=firstQuartile]]>
+                            </Tracking>
+                            <Tracking event="midpoint">
+                                <![CDATA[assets/tracker?wrapper=true&event=midpoint]]>
+                            </Tracking>
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[assets/tracker?wrapper=true&event=thirdQuartile]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[assets/tracker?wrapper=true&event=complete]]>
+                            </Tracking>
+                            <Tracking event="mute">
+                                <![CDATA[assets/tracker?wrapper=true&event=mute]]>
+                            </Tracking>
+                            <Tracking event="unmute">
+                                <![CDATA[assets/tracker?wrapper=true&event=unmute]]>
+                            </Tracking>
+                            <Tracking event="rewind">
+                                <![CDATA[assets/tracker?wrapper=true&event=rewind]]>
+                            </Tracking>
+                            <Tracking event="pause">
+                                <![CDATA[assets/tracker?wrapper=true&event=pause]]>
+                            </Tracking>
+                            <Tracking event="resume">
+                                <![CDATA[assets/tracker?wrapper=true&event=resume]]>
+                            </Tracking>
+                            <Tracking event="fullscreen">
+                                <![CDATA[assets/tracker?wrapper=true&event=fullscreen]]>
+                            </Tracking>
+                            <Tracking event="creativeView">
+                                <![CDATA[assets/tracker?wrapper=true&event=creativeView]]>
+                            </Tracking>
+                        </TrackingEvents>
+                    </Linear>
+                </Creative>
+                <Creative>
+                    <Linear>
+                        <ClickTracking id="vastWrapperTwo">
+                            <![CDATA[assets/tracker?event=click]]>
+                        </ClickTracking>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </Wrapper>
+    </Ad>
+</VAST>
