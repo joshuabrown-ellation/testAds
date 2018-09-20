@@ -1,14 +1,14 @@
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
-    <Ad id="longVpaidOne">
+    <Ad id="simpleVpaid">
         <InLine>
             <AdSystem>Vilos</AdSystem>
-            <AdTitle>Long Vpaid One</AdTitle>
-            <Description>Long Vpaid Ad</Description>
+            <AdTitle>Linear VPAID Example</AdTitle>
+            <Description>Simple Vpaid</Description>
             <Error>
-                <![CDATA[assets/tracker?event=error]]>
+                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=error]]>
             </Error>
             <Impression>
-                <![CDATA[assets/tracker?event=impression]]>
+                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=impression]]>
             </Impression>
             <Creatives>
                 <Creative sequence="1">
@@ -16,59 +16,59 @@
                         <Duration>00:00:50</Duration>
                         <TrackingEvents>
                             <Tracking event="start">
-                                <![CDATA[assets/tracker?event=start]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=start]]>
                             </Tracking>
                             <Tracking event="firstQuartile">
-                                <![CDATA[assets/tracker?event=firstQuartile]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=firstQuartile]]>
                             </Tracking>
                             <Tracking event="midpoint">
-                                <![CDATA[assets/tracker?event=midpoint]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=midpoint]]>
                             </Tracking>
                             <Tracking event="thirdQuartile">
-                                <![CDATA[assets/tracker?event=thirdQuartile]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=thirdQuartile]]>
                             </Tracking>
                             <Tracking event="complete">
-                                <![CDATA[assets/tracker?event=complete]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=complete]]>
                             </Tracking>
                             <Tracking event="mute">
-                                <![CDATA[assets/tracker?event=mute]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=mute]]>
                             </Tracking>
                             <Tracking event="unmute">
-                                <![CDATA[assets/tracker?event=unmute]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=unmute]]>
                             </Tracking>
                             <Tracking event="rewind">
-                                <![CDATA[assets/tracker?event=rewind]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=rewind]]>
                             </Tracking>
                             <Tracking event="pause">
-                                <![CDATA[assets/tracker?event=pause]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=pause]]>
                             </Tracking>
                             <Tracking event="resume">
-                                <![CDATA[assets/tracker?event=resume]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=resume]]>
                             </Tracking>
                             <Tracking event="fullscreen">
-                                <![CDATA[assets/tracker?event=fullscreen]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=fullscreen]]>
                             </Tracking>
                             <Tracking event="creativeView">
-                                <![CDATA[assets/tracker?event=creativeView]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=creativeView]]>
                             </Tracking>
                             <Tracking event="acceptInvitation">
-                                <![CDATA[assets/tracker?event=acceptInvitation]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=acceptInvitation]]>
                             </Tracking>
                         </TrackingEvents>
                         <AdParameters>
-                            <![CDATA[{"videos":[{"url":"//s3-us-west-1.amazonaws.com/vilostest/resources/long_vpaid_one.mp4","mimetype":"video/mp4"}],"overlay":"https://image.freepik.com/free-icon/play-button_318-42541.jpg"}]]>
+                            <![CDATA[{"videos":[{"url":"//s3-us-west-1.amazonaws.com/vilostest/resources/long_vpaid_one.mp4","mimetype":"video/mp4"}],"overlay":"//image.freepik.com/free-icon/play-button_318-42541.jpg"}]]>
                         </AdParameters>
                         <VideoClicks>
-                            <ClickThrough id="longVpaidOne">
+                            <ClickThrough id="simpleVpaid">
                                 <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/testClickThrough.html]]>
                             </ClickThrough>
-                            <ClickTracking id="longVpaidOne">
-                                <![CDATA[/s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=click]]>
+                            <ClickTracking id="simpleVpaid">
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/tracker?event=click]]>
                             </ClickTracking>
                         </VideoClicks>
                         <MediaFiles>
                             <MediaFile id="simpleVpaid" apiFramework="VPAID" type="application/javascript">
-                                <![CDATA[assets/simpleVpaid.js]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/simpleVpaid.js]]>
                             </MediaFile>
                         </MediaFiles>
                     </Linear>

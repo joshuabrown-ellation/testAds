@@ -159,7 +159,6 @@ const server = http.createServer( function ( request, response ) {
             case 10: // malformed vast :)
                 result = fs.readFileSync( __dirname + '/ads/malformed.xml' );
                 response.writeHead( 200, { 'Content-Type': 'text/xml', 'Access-Control-Allow-Origin': '*' } );
-                console.log('dude!');
                 response.end( result );
                 break;
             default: // unknown type
