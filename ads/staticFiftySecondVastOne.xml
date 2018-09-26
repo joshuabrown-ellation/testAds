@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <VAST version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd">
-    <Ad id="simpleVast">
+    <Ad id="staticTenSecondVastOne">
         <InLine>
             <AdSystem version="0.0.1">Vilos</AdSystem>
             <AdTitle>Simple Vast</AdTitle>
             <Description>Video with trackers and a click through</Description>
-            <Impression id='simpleVast'><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=impression]]></Impression>
+            <Impression id='staticTenSecondVastOne'><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=impression]]></Impression>
             <Creatives>
-                <Creative sequence="1" AdID="simpleVast">
+                <Creative sequence="1" AdID="staticTenSecondVastOne">
                     <Linear>
                         <Duration>00:00:10</Duration>
                         <TrackingEvents>
@@ -18,11 +18,11 @@
                             <Tracking event="complete"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=complete_linear]]></Tracking>
                         </TrackingEvents>
                         <VideoClicks>
-                            <ClickThrough><![CDATA[assets/testClickThrough.html?type=clickthrough_linear]]></ClickThrough>
+                            <ClickThrough><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/testClickThrough.html?type=clickthrough_linear]]></ClickThrough>
                         </VideoClicks>
                         <MediaFiles>
-                            <MediaFile id="vast_one" delivery="progressive" type="video/mp4" bitrate="551" width="560" height="320">
-                                <![CDATA[assets/vast_one.mp4]]>
+                            <MediaFile id="staticTenSecondVastOne" delivery="progressive" type="video/mp4" bitrate="551" width="560" height="320">
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/long_vast_one.mp4]]>
                             </MediaFile>
                         </MediaFiles>
                     </Linear>
