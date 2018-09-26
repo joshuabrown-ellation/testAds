@@ -226,7 +226,7 @@
         "CPID": 1,
         "id": "lego",
         "name": "Lego",
-        "resource": "//localhost:8081/longVast",
+        "resource": "//s3-us-west-1.amazonaws.com/vilostest/ads/longVast",
         "type": "vast",
         "p": 0,
         "ecpm": 0,

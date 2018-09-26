@@ -5,17 +5,17 @@
             <AdSystem version="0.0.1">Vilos</AdSystem>
             <AdTitle>Header Bid Two</AdTitle>
             <Description>Video with trackers and a click through</Description>
-            <Impression id='headerBidTwo'><![CDATA[assets/tracker?type=impression]]></Impression>
+            <Impression id='headerBidTwo'><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=impression]]></Impression>
             <Creatives>
                 <Creative sequence="1" AdID="headerBidTwo">
                     <Linear>
                         <Duration>00:00:10</Duration>
                         <TrackingEvents>
-                            <Tracking event="start"><![CDATA[assets/tracker?type=start_linear]]></Tracking>
-                            <Tracking event="midpoint"><![CDATA[assets/tracker?type=midpoint_linear]]></Tracking>
-                            <Tracking event="firstQuartile"><![CDATA[assets/tracker?type=firstQuartile_linear]]></Tracking>
-                            <Tracking event="thirdQuartile"><![CDATA[assets/tracker?type=thirdQuartile_linear]]></Tracking>
-                            <Tracking event="complete"><![CDATA[assets/tracker?type=complete_linear]]></Tracking>
+                            <Tracking event="start"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=start_linear]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=midpoint_linear]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=firstQuartile_linear]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=thirdQuartile_linear]]></Tracking>
+                            <Tracking event="complete"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=complete_linear]]></Tracking>
                         </TrackingEvents>
                         <VideoClicks>
                             <ClickThrough><![CDATA[assets/testClickThrough.html?type=clickthrough_linear]]></ClickThrough>

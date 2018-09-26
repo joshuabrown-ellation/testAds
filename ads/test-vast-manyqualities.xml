@@ -11,33 +11,33 @@
                     <Linear>
                         <Duration>00:00:06</Duration>
                         <TrackingEvents>
-                            <Tracking event="start"><![CDATA[http://localhost/?type=start_linear]]></Tracking>
-                            <Tracking event="midpoint"><![CDATA[http://localhost/?type=midpoint_linear]]></Tracking>
-                            <Tracking event="firstQuartile"><![CDATA[http://localhost/?type=firstQuartile_linear]]></Tracking>
-                            <Tracking event="thirdQuartile"><![CDATA[http://localhost/?type=thirdQuartile_linear]]></Tracking>
-                            <Tracking event="complete"><![CDATA[http://localhost/?type=complete_linear]]></Tracking>
+                            <Tracking event="start"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=start_linear]]></Tracking>
+                            <Tracking event="midpoint"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=midpoint_linear]]></Tracking>
+                            <Tracking event="firstQuartile"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=firstQuartile_linear]]></Tracking>
+                            <Tracking event="thirdQuartile"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=thirdQuartile_linear]]></Tracking>
+                            <Tracking event="complete"><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=complete_linear]]></Tracking>
                         </TrackingEvents>
                         <VideoClicks>
-                            <ClickThrough><![CDATA[http://localhost/?type=clickthrough_linear]]></ClickThrough>
+                            <ClickThrough><![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?type=clickthrough_linear]]></ClickThrough>
                         </VideoClicks>
                         <MediaFiles>
                             <MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="5000" width="256" height="144">
-                                <![CDATA[assets/testAds/test-ad-144p.mp4]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/test-ad-144p.mp4]]>
                             </MediaFile>
                             <MediaFile id="2" delivery="progressive" type="video/mp4" bitrate="8000" width="320" height="240">
-                                <![CDATA[assets/testAds/test-ad-240p.mp4]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/test-ad-240p.mp4]]>
                             </MediaFile>
                             <MediaFile id="3" delivery="progressive" type="video/mp4" bitrate="11000" width="640" height="480">
-                                <![CDATA[assets/testAds/test-ad-480p.mp4]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/test-ad-480p.mp4]]>
                             </MediaFile>
                             <MediaFile id="4" delivery="progressive" type="video/mp4" bitrate="26000" width="1920" height="1080">
-                                <![CDATA[assets/testAds/test-ad-1080p.mp4]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/test-ad-1080p.mp4]]>
                             </MediaFile>
                             <MediaFile id="5" delivery="progressive" type="video/mp4" bitrate="17000" width="1280" height="720">
-                                <![CDATA[assets/testAds/test-ad-720p.mp4]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/test-ad-720p.mp4]]>
                             </MediaFile>
                             <MediaFile id="6" delivery="progressive" type="video/mp4" bitrate="74000" width="3840" height="2160">
-                                <![CDATA[assets/testAds/test-ad-2160p.mp4]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/test-ad-2160p.mp4]]>
                             </MediaFile>
                         </MediaFiles>
 

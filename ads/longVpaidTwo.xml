@@ -5,10 +5,10 @@
             <AdTitle>Long Vpaid Two</AdTitle>
             <Description>Long Vpaid</Description>
             <Error>
-                <![CDATA[assets/tracker?event=error]]>
+                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=error]]>
             </Error>
             <Impression>
-                <![CDATA[assets/tracker?event=impression]]>
+                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=impression]]>
             </Impression>
             <Creatives>
                 <Creative sequence="1">
@@ -16,43 +16,43 @@
                         <Duration>00:00:30</Duration>
                         <TrackingEvents>
                             <Tracking event="start">
-                                <![CDATA[assets/tracker?event=start]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=start]]>
                             </Tracking>
                             <Tracking event="firstQuartile">
-                                <![CDATA[assets/tracker?event=firstQuartile]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=firstQuartile]]>
                             </Tracking>
                             <Tracking event="midpoint">
-                                <![CDATA[assets/tracker?event=midpoint]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=midpoint]]>
                             </Tracking>
                             <Tracking event="thirdQuartile">
-                                <![CDATA[assets/tracker?event=thirdQuartile]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=thirdQuartile]]>
                             </Tracking>
                             <Tracking event="complete">
-                                <![CDATA[assets/tracker?event=complete]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=complete]]>
                             </Tracking>
                             <Tracking event="mute">
-                                <![CDATA[assets/tracker?event=mute]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=mute]]>
                             </Tracking>
                             <Tracking event="unmute">
-                                <![CDATA[assets/tracker?event=unmute]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=unmute]]>
                             </Tracking>
                             <Tracking event="rewind">
-                                <![CDATA[assets/tracker?event=rewind]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=rewind]]>
                             </Tracking>
                             <Tracking event="pause">
-                                <![CDATA[assets/tracker?event=pause]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=pause]]>
                             </Tracking>
                             <Tracking event="resume">
-                                <![CDATA[assets/tracker?event=resume]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=resume]]>
                             </Tracking>
                             <Tracking event="fullscreen">
-                                <![CDATA[assets/tracker?event=fullscreen]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=fullscreen]]>
                             </Tracking>
                             <Tracking event="creativeView">
-                                <![CDATA[assets/tracker?event=creativeView]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=creativeView]]>
                             </Tracking>
                             <Tracking event="acceptInvitation">
-                                <![CDATA[assets/tracker?event=acceptInvitation]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=acceptInvitation]]>
                             </Tracking>
                         </TrackingEvents>
                         <AdParameters>
@@ -63,7 +63,7 @@
                                 <![CDATA[assets/testClickThrough.html]]>
                             </ClickThrough>
                             <ClickTracking id="longVpaidTwo">
-                                <![CDATA[assets/tracker?event=click]]>
+                                <![CDATA[//s3-us-west-1.amazonaws.com/vilostest/resources/1x1.jpg?event=click]]>
                             </ClickTracking>
                         </VideoClicks>
                         <MediaFiles>
